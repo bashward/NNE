@@ -6,7 +6,7 @@ const app=express()
 
 app.use(express.urlencoded({extended: true}))
 app.use(cors())
-console.log(process.env.SENDGRID_API_KEY)
+
 const transporter=nodemailer.createTransport({
   host: "smtp.sendgrid.net",
   port: 465,
