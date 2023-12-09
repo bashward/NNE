@@ -28,7 +28,7 @@ app.post('/send',(req,res)=>{
     try {
       const info=await transporter.sendMail({
         from: '"NNEWEB" <thefootyguy07@gmail.com>',
-        to: "nikhilt626@gmail.com",
+        to: "sales@nnelectronics.org",
         subject: 'New Website Query',
         text: `New Query from ${name} , ${number} for ${query}`
       })
@@ -47,7 +47,6 @@ console.log(info.messageId)
 if(info.messageId) res.send('Sent!')
 })
 
-//sales@nnelectronics.org
 
 })
 

@@ -9,7 +9,7 @@ const Contact = () => {
 
    const HandleSubmit = ()=>{
     
-    axios.post('http://localhost:3001/send',{
+    axios.post('https://nne-backend.vercel.app/send',{
       Name: name,
       PNumber: number,
       Query: query
