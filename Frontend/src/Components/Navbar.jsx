@@ -1,37 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <div className="bg-gradient-to-b from-yellow-300 from-60% to-[#F5FCCD] border-b-4 border-orange-300 w-full flex justify-center items-end h-[20vh]">
-    <div className='flex ml-20 justify-around w-1/2 mb-3'>
-      <Link to='/' className='font-bold text-lg h-1/2 mt-2 p-2 hover:border-b-4 hover:border-blue-600 cursor-pointer'>
-      <div>
-       HOME
-      </div>
+    <nav className="flex items-center justify-between py-4 px-8 bg-white shadow">
+      <Link to="/" className="text-xl font-bold text-red-600">
+        NNE
       </Link>
-      <Link to='/aboutus' className='font-bold text-lg h-1/2 mt-2 p-2 hover:border-b-4 hover:border-blue-600 cursor-pointer'>
-      <div>
-        ABOUT
+      <div className="space-x-6">
+        <Link to="/about" className="hover:text-red-600">About</Link>
+        <Link to="/products" className="hover:text-red-600">Products</Link>
+        <Link to="/contact" className="hover:text-red-600">Contact</Link>
       </div>
-      </Link>
-      <Link to='/' className='md:max-w-[15rem] xs:max-w-[10rem]'>
-      <div>
-      <img className='pb-2' src={require("../Content/logo.png")} alt="logo" />
-      </div>
-      </Link>
-      <div className='font-bold text-lg h-1/2 mt-2 p-2 hover:border-b-4 hover:border-blue-600 cursor-pointer'>
-        PRODUCTS
-      </div>
-      <Link to='/contactus' className='font-bold text-lg h-1/2 mt-2 p-2 hover:border-b-4 hover:border-blue-600 cursor-pointer'>
-      <div>
-        CONTACT US
-      </div>
-      </Link>
-    </div>
-    </div>
-   
-  )
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
+
+
+
+//<img className='pb-2' src={require("../Content/logo.png")} alt="logo" />
