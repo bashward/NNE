@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="flex items-center justify-between py-4 px-8 bg-white shadow">
       <Link to="/" className="text-xl font-bold text-red-600">
-        <img src={require("../Content/logo.png")} alt="logo" />
+        <img style={{ width: '100px', height: 'auto' }} src={require("../Content/logo.png")} alt="logo" />
       </Link>
       <div className="space-x-6">
         <Link to="/about" className="hover:text-red-600">About</Link>
