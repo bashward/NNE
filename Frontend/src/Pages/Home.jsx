@@ -1,6 +1,4 @@
 import React from 'react';
-import transformerImg from '../public/transformer.png'; 
-import toroidalImg from '../public/toroidal.png'; 
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -25,7 +23,7 @@ function Home() {
         <div className="flex flex-row items-center space-x-8">
           {/* Transformer Image */}
           <div className="relative">
-            <img src={transformerImg} alt="Transformer" className="w-64 h-auto object-contain" />
+            <img src="/transformer.png" alt="Transformer" className="w-64 h-auto object-contain" />
             {/* Hotspots */}
             <div className="absolute top-1/2 left-0 flex items-center space-x-2 group">
               <div className="w-3 h-3 bg-red-600 rounded-full hover:cursor-pointer relative">
@@ -38,7 +36,7 @@ function Home() {
 
           {/* Toroidal Coil Image */}
           <div className="relative">
-            <img src={toroidalImg} alt="Toroidal Coil" className="w-64 h-auto object-contain" />
+            <img src="/toroidal.png" alt="Toroidal Coil" className="w-64 h-auto object-contain" />
             {/* Hotspots */}
             <div className="absolute top-1/3 right-0 flex items-center space-x-2 group">
               <div className="w-3 h-3 bg-red-600 rounded-full hover:cursor-pointer relative">
