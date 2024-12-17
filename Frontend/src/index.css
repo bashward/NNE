@@ -2,28 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  opacity: 1 !important;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
 
 body{
     font-family: 'Nunito', sans-serif;
 }
 
  /* width */
- ::-webkit-scrollbar {
+/*  ::-webkit-scrollbar {
     width: 5px;
-  }
+  } */
   
   /* Track */
-  ::-webkit-scrollbar-track {
+/*   ::-webkit-scrollbar-track {
     background: #f1f1f1;
-  }
+  } */
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+/*   ::-webkit-scrollbar-thumb {
     background: #888;
-  }
+  } */
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+/*   ::-webkit-scrollbar-thumb:hover {
     background: #555;
-  } 
+  }  */ */
