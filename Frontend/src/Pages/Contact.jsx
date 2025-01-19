@@ -48,16 +48,16 @@ function Contact() {
         <div className="space-y-6">
           <div>
             <h3 className="font-bold">Email</h3>
-            <p className="text-gray-600"><a href="mailto:info@nne.com" className="text-red-600 hover:underline">info@nne.com</a></p>
+            <p className="text-gray-600"><a href="mailto:sales@nnelectronics.org" className="text-red-600 hover:underline">sales@nnelectronics.org</a></p>
           </div>
           <div>
             <h3 className="font-bold">Call Us</h3>
-            <p className="text-gray-600">+1 (555) 000-0000 (Mon-Fri, 9am-5pm)</p>
+            <p className="text-gray-600">+91-9953087659, +91-9910781004</p>
           </div>
-          <div>
+          {/* <div>
             <h3 className="font-bold">Visit Us</h3>
             <p className="text-gray-600">1234 Ferrite Lane, Coil City, 56789</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
