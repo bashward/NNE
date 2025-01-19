@@ -14,7 +14,10 @@ function Home() {
             Engineered for Reliability, Efficiency, and Innovation
           </p>
           <div className="mt-6">
-            <Link to="/products" className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            <Link
+              to="/products"
+              className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+            >
               View Products
             </Link>
           </div>
@@ -22,12 +25,23 @@ function Home() {
 
         <div className="flex flex-row items-center space-x-8">
           {/* Transformer Image */}
-          <div className="relative">
-            <img src="/transformer.png" alt="Transformer" className="w-64 h-auto object-contain" />
-            {/* Hotspots */}
-            <div className="absolute top-1/2 left-0 flex items-center space-x-2 group">
+          <div className="relative w-64 h-auto inline-block">
+            <img
+              src="/transformer.png"
+              alt="Transformer"
+              className="w-full h-auto object-contain"
+            />
+            {/* Hotspot */}
+            <div
+              className="absolute group"
+              style={{
+                top: '45%',   // Adjust as needed
+                left: '70%',  // Adjust as needed
+              }}
+            >
               <div className="w-3 h-3 bg-red-600 rounded-full hover:cursor-pointer relative">
-                <div className="hidden group-hover:block absolute left-4 top-[-10px] bg-white text-black text-sm p-2 border shadow rounded">
+                {/* Tooltip */}
+                <div className="hidden group-hover:block absolute left-5 -top-2 bg-white text-black text-sm p-2 border shadow rounded whitespace-nowrap">
                   High-Purity Copper Windings
                 </div>
               </div>
@@ -35,12 +49,23 @@ function Home() {
           </div>
 
           {/* Toroidal Coil Image */}
-          <div className="relative">
-            <img src="/toroidal.png" alt="Toroidal Coil" className="w-64 h-auto object-contain" />
-            {/* Hotspots */}
-            <div className="absolute top-1/3 right-0 flex items-center space-x-2 group">
+          <div className="relative w-64 h-auto inline-block">
+            <img
+              src="/toroidal.png"
+              alt="Toroidal Coil"
+              className="w-full h-auto object-contain"
+            />
+            {/* Hotspot */}
+            <div
+              className="absolute group"
+              style={{
+                top: '30%',   // Adjust as needed
+                left: '60%',  // Adjust as needed
+              }}
+            >
               <div className="w-3 h-3 bg-red-600 rounded-full hover:cursor-pointer relative">
-                <div className="hidden group-hover:block absolute right-4 top-[-10px] bg-white text-black text-sm p-2 border shadow rounded">
+                {/* Tooltip */}
+                <div className="hidden group-hover:block absolute left-5 -top-2 bg-white text-black text-sm p-2 border shadow rounded whitespace-nowrap">
                   Precision Wound Coil
                 </div>
               </div>
@@ -109,7 +134,10 @@ function Home() {
       <section className="py-16 px-8 text-center">
         <h2 className="text-3xl font-semibold mb-4">Ready to Get Started?</h2>
         <p className="text-gray-700 mb-6">Contact us to discuss your custom requirements or learn more about our capabilities.</p>
-        <Link to="/contact" className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+        <Link
+          to="/contact"
+          className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+        >
           Contact Us
         </Link>
       </section>
