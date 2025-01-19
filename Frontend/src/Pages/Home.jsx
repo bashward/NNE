@@ -35,16 +35,33 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '45%',
-                left: '65%', // Adjust as needed
+                top: '45%',   // Adjust vertical position as needed
+                left: '60%',  // Adjust horizontal position as needed
               }}
             >
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip placed to the LEFT of the dot */}
+                {/* Tooltip: positioned to the right of the dot */}
                 <div 
-                  className="hidden group-hover:block absolute -left-[160px] top-[-10px] w-[150px] whitespace-nowrap bg-white text-black text-sm p-2 border shadow rounded"
+                  className="
+                    hidden 
+                    group-hover:block 
+                    absolute 
+                    left-[110%]     
+                    top-1/2 
+                    -translate-y-1/2 
+                    w-[150px] 
+                    whitespace-nowrap 
+                    bg-white 
+                    text-black 
+                    text-sm 
+                    p-2 
+                    border 
+                    shadow 
+                    rounded 
+                    z-50
+                  "
                 >
                   High-Purity Copper Windings
                 </div>
@@ -63,16 +80,33 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '35%',
-                left: '30%', // Adjust as needed
+                top: '35%',   // Adjust vertical position as needed
+                left: '50%',  // Adjust horizontal position as needed
               }}
             >
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip placed to the RIGHT (or above) the dot */}
+                {/* Tooltip: positioned to the right of the dot */}
                 <div 
-                  className="hidden group-hover:block absolute left-5 top-[-10px] w-[150px] whitespace-nowrap bg-white text-black text-sm p-2 border shadow rounded"
+                  className="
+                    hidden 
+                    group-hover:block 
+                    absolute 
+                    left-[110%] 
+                    top-1/2 
+                    -translate-y-1/2 
+                    w-[150px] 
+                    whitespace-nowrap
+                    bg-white 
+                    text-black 
+                    text-sm 
+                    p-2 
+                    border 
+                    shadow 
+                    rounded 
+                    z-50
+                  "
                 >
                   Precision Wound Coil
                 </div>
@@ -156,4 +190,5 @@ function Home() {
 }
 
 export default Home;
+
 
