@@ -35,31 +35,31 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '45%',   // Adjust vertical position as needed
-                left: '60%',  // Adjust horizontal position as needed
+                top: '50%',  // Adjust vertical position of dot over transformer
+                left: '60%', // Adjust horizontal position
               }}
             >
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip: positioned to the right of the dot */}
+                {/* Tooltip: Placed above the dot */}
                 <div 
                   className="
                     hidden 
                     group-hover:block 
-                    absolute 
-                    left-[110%]     
-                    top-1/2 
-                    -translate-y-1/2 
-                    w-[150px] 
-                    whitespace-nowrap 
-                    bg-white 
-                    text-black 
-                    text-sm 
-                    p-2 
-                    border 
-                    shadow 
-                    rounded 
+                    absolute
+                    bottom-[110%]       /* position tooltip above the dot */ 
+                    left-1/2
+                    -translate-x-1/2    /* center horizontally above the dot */
+                    w-[170px]           /* slightly wider if needed */
+                    whitespace-nowrap
+                    bg-white
+                    text-black
+                    text-sm
+                    p-2
+                    border
+                    shadow
+                    rounded
                     z-50
                   "
                 >
@@ -80,31 +80,31 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '35%',   // Adjust vertical position as needed
-                left: '50%',  // Adjust horizontal position as needed
+                top: '50%',   // Adjust for best placement on toroidal image
+                left: '40%',  // Adjust horizontal position
               }}
             >
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip: positioned to the right of the dot */}
+                {/* Tooltip: Placed above the dot */}
                 <div 
                   className="
                     hidden 
                     group-hover:block 
-                    absolute 
-                    left-[110%] 
-                    top-1/2 
-                    -translate-y-1/2 
-                    w-[150px] 
+                    absolute
+                    bottom-[110%]
+                    left-1/2
+                    -translate-x-1/2
+                    w-[170px]
                     whitespace-nowrap
-                    bg-white 
-                    text-black 
-                    text-sm 
-                    p-2 
-                    border 
-                    shadow 
-                    rounded 
+                    bg-white
+                    text-black
+                    text-sm
+                    p-2
+                    border
+                    shadow
+                    rounded
                     z-50
                   "
                 >
@@ -190,5 +190,3 @@ function Home() {
 }
 
 export default Home;
-
-
