@@ -35,13 +35,17 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '45%',   // Adjust as needed
-                left: '70%',  // Adjust as needed
+                top: '45%',
+                left: '65%', // Adjust as needed
               }}
             >
-              <div className="w-3 h-3 bg-red-600 rounded-full hover:cursor-pointer relative">
-                {/* Tooltip */}
-                <div className="hidden group-hover:block absolute left-5 -top-2 bg-white text-black text-sm p-2 border shadow rounded whitespace-nowrap">
+              <div 
+                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
+              >
+                {/* Tooltip placed to the LEFT of the dot */}
+                <div 
+                  className="hidden group-hover:block absolute -left-[160px] top-[-10px] w-[150px] whitespace-nowrap bg-white text-black text-sm p-2 border shadow rounded"
+                >
                   High-Purity Copper Windings
                 </div>
               </div>
@@ -59,13 +63,17 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '30%',   // Adjust as needed
-                left: '60%',  // Adjust as needed
+                top: '35%',
+                left: '30%', // Adjust as needed
               }}
             >
-              <div className="w-3 h-3 bg-red-600 rounded-full hover:cursor-pointer relative">
-                {/* Tooltip */}
-                <div className="hidden group-hover:block absolute left-5 -top-2 bg-white text-black text-sm p-2 border shadow rounded whitespace-nowrap">
+              <div 
+                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
+              >
+                {/* Tooltip placed to the RIGHT (or above) the dot */}
+                <div 
+                  className="hidden group-hover:block absolute left-5 top-[-10px] w-[150px] whitespace-nowrap bg-white text-black text-sm p-2 border shadow rounded"
+                >
                   Precision Wound Coil
                 </div>
               </div>
@@ -133,7 +141,9 @@ function Home() {
       {/* Final CTA */}
       <section className="py-16 px-8 text-center">
         <h2 className="text-3xl font-semibold mb-4">Ready to Get Started?</h2>
-        <p className="text-gray-700 mb-6">Contact us to discuss your custom requirements or learn more about our capabilities.</p>
+        <p className="text-gray-700 mb-6">
+          Contact us to discuss your custom requirements or learn more about our capabilities.
+        </p>
         <Link
           to="/contact"
           className="px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
@@ -146,3 +156,4 @@ function Home() {
 }
 
 export default Home;
+
