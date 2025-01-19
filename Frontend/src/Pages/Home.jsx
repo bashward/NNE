@@ -35,24 +35,23 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '50%',  // Adjust vertical position of dot over transformer
-                left: '60%', // Adjust horizontal position
+                top: '50%',  // Adjust for precise vertical alignment
+                left: '60%', // Adjust for precise horizontal alignment
               }}
             >
+              {/* The red hotspot dot */}
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip: Placed above the dot */}
+                {/* Tooltip: positioned above the dot */}
                 <div 
                   className="
                     hidden 
                     group-hover:block 
                     absolute
-                    bottom-[110%]       /* position tooltip above the dot */ 
+                    bottom-[110%] 
                     left-1/2
-                    -translate-x-1/2    /* center horizontally above the dot */
-                    w-[170px]           /* slightly wider if needed */
-                    whitespace-nowrap
+                    -translate-x-1/2
                     bg-white
                     text-black
                     text-sm
@@ -61,6 +60,7 @@ function Home() {
                     shadow
                     rounded
                     z-50
+                    whitespace-normal
                   "
                 >
                   High-Purity Copper Windings
@@ -80,14 +80,14 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '50%',   // Adjust for best placement on toroidal image
-                left: '40%',  // Adjust horizontal position
+                top: '50%',   // Adjust for precise vertical alignment
+                left: '40%',  // Adjust for precise horizontal alignment
               }}
             >
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip: Placed above the dot */}
+                {/* Tooltip: also positioned above the dot */}
                 <div 
                   className="
                     hidden 
@@ -96,8 +96,6 @@ function Home() {
                     bottom-[110%]
                     left-1/2
                     -translate-x-1/2
-                    w-[170px]
-                    whitespace-nowrap
                     bg-white
                     text-black
                     text-sm
@@ -106,6 +104,7 @@ function Home() {
                     shadow
                     rounded
                     z-50
+                    whitespace-normal
                   "
                 >
                   Precision Wound Coil
