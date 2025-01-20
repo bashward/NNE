@@ -11,7 +11,7 @@ function Home() {
             Precision Ferrite & Toroidal Solutions
           </h1>
           <p className="text-lg text-gray-600">
-            Engineered for Reliability, Efficiency, and Innovation
+            Your Trusted Partner for Customized Power Solutions
           </p>
           <div className="mt-6">
             <Link
@@ -35,15 +35,13 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '50%',  // Adjust for precise vertical alignment
-                left: '60%', // Adjust for precise horizontal alignment
+                top: '50%',
+                left: '60%',
               }}
             >
-              {/* The red hotspot dot */}
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip: positioned above the dot */}
                 <div 
                   className="
                     hidden 
@@ -80,14 +78,13 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '50%',   // Adjust for precise vertical alignment
-                left: '40%',  // Adjust for precise horizontal alignment
+                top: '50%',
+                left: '40%',
               }}
             >
               <div 
                 className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
               >
-                {/* Tooltip: also positioned above the dot */}
                 <div 
                   className="
                     hidden 
@@ -117,10 +114,11 @@ function Home() {
 
       {/* Intro Section */}
       <section className="py-16 px-8 bg-gray-50 text-center">
-        <h2 className="text-2xl font-semibold mb-4">Custom-Engineered Transformations</h2>
+        <h2 className="text-2xl font-semibold mb-4">Innovative Power Solutions</h2>
         <p className="max-w-2xl mx-auto text-gray-700">
-          We specialize in crafting custom ferrite transformers, toroidal coils, and inductors that meet your unique specifications.
-          From high-frequency applications to efficient power solutions, we’re here to provide reliability and performance.
+          With decades of experience, we specialize in providing innovative and customized power solutions.
+          Our expertise in ferrite transformers, toroidal coils, and inductors ensures exceptional performance,
+          efficiency, and reliability.
         </p>
         <div className="mt-4">
           <Link to="/about" className="text-red-600 hover:underline">
@@ -131,51 +129,57 @@ function Home() {
 
       {/* Product Categories */}
       <section className="py-16 px-8">
-        <h2 className="text-3xl font-semibold text-center mb-8">Our Capabilities</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8">Our Product Range</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="bg-white p-6 shadow hover:shadow-lg transition">
             <h3 className="text-xl font-bold mb-2">Ferrite Transformers</h3>
-            <p className="text-gray-600">High-efficiency designs for various power applications.</p>
+            <p className="text-gray-600">
+              Designed for high-frequency and high-power applications, offering unmatched efficiency and reliability.
+            </p>
           </div>
           <div className="bg-white p-6 shadow hover:shadow-lg transition">
             <h3 className="text-xl font-bold mb-2">Toroidal Coils</h3>
-            <p className="text-gray-600">Precision wound inductors optimized for low interference.</p>
+            <p className="text-gray-600">
+              Precision-engineered toroidal coils ideal for low-noise and compact power applications.
+            </p>
           </div>
           <div className="bg-white p-6 shadow hover:shadow-lg transition">
             <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
-            <p className="text-gray-600">Tailored designs to match unique technical specifications.</p>
+            <p className="text-gray-600">
+              Tailored to meet your specific technical requirements, ensuring optimal performance for every application.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Value Proposition */}
       <section className="py-16 px-8 bg-gray-100">
-        <h2 className="text-3xl font-semibold text-center mb-8">Why Choose Us</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8">Why Choose Us?</h2>
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
           <div className="text-center">
-            <h4 className="font-bold mb-2">Quality Materials</h4>
-            <p className="text-gray-600">International-grade copper and ferrite cores.</p>
+            <h4 className="font-bold mb-2">Premium Materials</h4>
+            <p className="text-gray-600">International-grade copper and ferrite cores for maximum durability.</p>
           </div>
           <div className="text-center">
-            <h4 className="font-bold mb-2">Engineering Expertise</h4>
-            <p className="text-gray-600">Decades of experience in power electronics.</p>
+            <h4 className="font-bold mb-2">Unmatched Expertise</h4>
+            <p className="text-gray-600">A team of professionals with decades of experience in power electronics.</p>
           </div>
           <div className="text-center">
-            <h4 className="font-bold mb-2">Reliability & Efficiency</h4>
-            <p className="text-gray-600">Products designed for durability and performance.</p>
+            <h4 className="font-bold mb-2">Tailored Solutions</h4>
+            <p className="text-gray-600">Custom designs crafted to meet unique customer requirements.</p>
           </div>
           <div className="text-center">
-            <h4 className="font-bold mb-2">Dedicated Support</h4>
-            <p className="text-gray-600">Expert guidance and responsive communication.</p>
+            <h4 className="font-bold mb-2">Customer Focus</h4>
+            <p className="text-gray-600">Dedicated to delivering exceptional support and technical assistance.</p>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="py-16 px-8 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Ready to Get Started?</h2>
+        <h2 className="text-3xl font-semibold mb-4">Ready to Collaborate?</h2>
         <p className="text-gray-700 mb-6">
-          Contact us to discuss your custom requirements or learn more about our capabilities.
+          Get in touch to discuss your requirements and explore how we can deliver tailored power solutions.
         </p>
         <Link
           to="/contact"
@@ -189,3 +193,4 @@ function Home() {
 }
 
 export default Home;
+
