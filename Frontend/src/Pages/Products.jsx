@@ -1,27 +1,70 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Products() {
+  const products = [
+    {
+      name: 'Ferrite Transformers',
+      description: 'High-efficiency transformers for industrial and commercial applications.',
+      image: '/ferrite-transformer.png',
+      link: '/products/ferrite-transformers',
+    },
+    {
+      name: 'Toroidal Coils',
+      description: 'Precision-engineered toroidal coils for compact and noise-sensitive environments.',
+      image: '/toroidal-coil.png',
+      link: '/products/toroidal-coils',
+    },
+    {
+      name: 'Inductors',
+      description: 'Custom inductors designed for high-performance power electronics.',
+      image: '/transformer.jpg',
+      link: '/products/inductors',
+    },
+    {
+      name: 'Custom Solutions',
+      description: 'Tailored solutions for unique technical and application requirements.',
+      image: '/toroidal.png',
+      link: '/products/custom-solutions',
+    },
+  ];
+
   return (
-    <div className="px-8 py-16">
-      <h1 className="text-4xl font-bold text-center mb-8">Our Capabilities</h1>
-      <p className="text-center max-w-3xl mx-auto text-gray-600 mb-12">
-        We offer a wide range of custom-engineered solutions. Browse examples of what we can produce 
-        or contact us for a custom specification.
+    <div className="py-16 px-8 bg-gray-50">
+      <h1 className="text-4xl font-bold text-center mb-12 animate-fadeIn">
+        Explore Our Product Portfolio
+      </h1>
+      <p className="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-12 animate-fadeIn delay-200">
+        We offer a wide range of products designed to meet diverse industrial and commercial requirements. Click on any product below to learn more.
       </p>
-      {/* Product/Capability Cards - Could show categories, specs, or lead to a form */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div className="bg-white p-6 shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold mb-2">High-Frequency Ferrite Transformers</h3>
-          <p className="text-gray-600">Designed for efficiency and longevity in demanding applications.</p>
-        </div>
-        <div className="bg-white p-6 shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold mb-2">Precision Toroidal Coils</h3>
-          <p className="text-gray-600">Custom-wound inductors for minimal noise and interference.</p>
-        </div>
-        <div className="bg-white p-6 shadow hover:shadow-lg transition">
-          <h3 className="text-xl font-bold mb-2">Specialized Custom Builds</h3>
-          <p className="text-gray-600">Partner with our engineering team to develop a solution tailored to your exact needs.</p>
-        </div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        {products.map((product, index) => (
+          <Link
+            to={product.link}
+            key={index}
+            className="group relative bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition transform duration-300 animate-slideUp"
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
+            {/* Image Section */}
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-52 object-cover group-hover:brightness-90 transition duration-300"
+            />
+
+            {/* Overlay on Hover */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition duration-300"></div>
+
+            {/* Content */}
+            <div className="absolute bottom-4 left-4 z-10">
+              <h2 className="text-xl font-bold text-white mb-2 group-hover:text-red-500">
+                {product.name}
+              </h2>
+              <p className="text-sm text-gray-200">{product.description}</p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
