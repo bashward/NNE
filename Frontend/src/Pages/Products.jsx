@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Products() {
-  const [selectedProduct, setSelectedProduct] = useState(null); // Track selected product
+  const [clickedProduct, setClickedProduct] = useState(null); // Track clicked product
   const navigate = useNavigate();
 
   const products = [
@@ -32,11 +32,11 @@ function Products() {
     },
   ];
 
-  const handleProductClick = (product, index) => {
-    setSelectedProduct(index); // Set the selected product for animation
+  const handleProductClick = (index, product) => {
+    setClickedProduct(index); // Set the clicked product
     setTimeout(() => {
-      navigate(product.link); // Navigate to the product page after animation
-    }, 500); // Delay navigation for smooth transition
+      navigate(product.link); // Navigate after animation completes
+    }, 800); // Match the animation duration
   };
 
   return (
@@ -48,14 +48,22 @@ function Products() {
         We offer a wide range of products designed to meet diverse industrial and commercial requirements. Click on any product below to learn more.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto relative">
         {products.map((product, index) => (
           <div
             key={index}
-            onClick={() => handleProductClick(product, index)}
+            onClick={() => handleProductClick(index, product)}
             className={`group relative bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-transform duration-300 cursor-pointer ${
-              selectedProduct === index ? 'scale-105 z-50' : ''
+              clickedProduct === index ? 'absolute z-50 top-0 left-0 w-full h-full scale-100' : ''
             }`}
+            style={
+              clickedProduct === index
+                ? {
+                    transition: 'all 0.8s ease-in-out',
+                    zIndex: 50,
+                  }
+                : {}
+            }
           >
             {/* Image Section */}
             <img
