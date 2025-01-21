@@ -1,6 +1,39 @@
 import React from 'react';
 
 function About() {
+  const timelineEvents = [
+    {
+      year: '1997',
+      description: 'Founded in Okhla by Virender Singh and Naresh Thakur, focusing on components for the TV industry.',
+    },
+    {
+      year: '2001',
+      description: 'Began mass production of CFL inductor components.',
+    },
+    {
+      year: '2006',
+      description: 'Shifted operations to a larger unit in Okhla.',
+    },
+    {
+      year: '2012',
+      description: 'Reached the milestone of producing 1 million components.',
+    },
+    {
+      year: '2019',
+      description: 'Launched a new production line for lamination transformers up to 5KVA.',
+    },
+    {
+      year: '2020',
+      description: 'Expanded production for EV chargers and solar inverters.',
+    },
+    {year: '2021',
+    description: 'Surpassed 3 million components production milestone.',
+    },
+    {year: '2023',
+    description: 'Established a new production unit in Himachal Pradesh.',
+    },
+  ];
+  
   return (
     <div className="py-16 px-8 bg-gray-50">
       {/* Header */}
@@ -14,78 +47,22 @@ function About() {
       </section>
 
       {/* Timeline Section */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-semibold text-center mb-8">Our Journey</h2>
-        <div className="relative max-w-4xl mx-auto">
-          {/* Vertical Timeline */}
-          <div className="border-l-4 border-red-600">
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                1997
-              </div>
-              <p className="text-gray-700">
-                Founded in Okhla by Virender Singh and Naresh Thakur, focusing on components for the TV industry.
-              </p>
+   <div className="relative max-w-4xl mx-auto">
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-red-600 h-full"></div>
+
+        {timelineEvents.map((event, index) => (
+          <div
+            key={index}
+            className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} mb-12`}
+          >
+            <div className={`w-1/2 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+              <h3 className="text-xl font-semibold text-gray-900">{event.year}</h3>
+              <p className="text-gray-600">{event.description}</p>
             </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2001
-              </div>
-              <p className="text-gray-700">
-                Began mass production of CFL inductor components.
-              </p>
-            </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2006
-              </div>
-              <p className="text-gray-700">
-                Shifted operations to a larger unit in Okhla.
-              </p>
-            </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2012
-              </div>
-              <p className="text-gray-700">
-                Reached the milestone of producing 1 million components.
-              </p>
-            </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2019
-              </div>
-              <p className="text-gray-700">
-                Launched a new production line for lamination transformers up to 5KVA.
-              </p>
-            </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2020
-              </div>
-              <p className="text-gray-700">
-                Expanded production for EV chargers and solar inverters.
-              </p>
-            </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2021
-              </div>
-              <p className="text-gray-700">
-                Surpassed 3 million components production milestone.
-              </p>
-            </div>
-            <div className="timeline-item mb-8 pl-8 relative">
-              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
-                2023
-              </div>
-              <p className="text-gray-700">
-                Established a new production unit in Himachal Pradesh.
-              </p>
-            </div>
+            <div className="relative w-4 h-4 bg-red-600 rounded-full z-10 border-4 border-white"></div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
 
       {/* Vision Section */}
       <section className="mb-16 bg-white py-12 px-8 shadow-lg rounded-lg">
