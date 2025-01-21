@@ -16,54 +16,73 @@ function About() {
       {/* Timeline Section */}
       <section className="mb-16">
         <h2 className="text-3xl font-semibold text-center mb-8">Our Journey</h2>
-        <div className="timeline-container max-w-4xl mx-auto">
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">1997</div>
-            <p className="timeline-description">
-              Founded in Okhla by Virender Singh and Naresh Thakur, focusing on components for the TV industry.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2001</div>
-            <p className="timeline-description">
-              Began mass production of CFL inductor components.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2006</div>
-            <p className="timeline-description">
-              Shifted operations to a larger unit in Okhla.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2012</div>
-            <p className="timeline-description">
-              Reached the milestone of producing 1 million components.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2019</div>
-            <p className="timeline-description">
-              Launched a new production line for lamination transformers up to 5KVA.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2020</div>
-            <p className="timeline-description">
-              Expanded production for EV chargers and solar inverters.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2021</div>
-            <p className="timeline-description">
-              Surpassed 3 million components production milestone.
-            </p>
-          </div>
-          <div className="timeline-item mb-8">
-            <div className="timeline-date text-red-600 font-bold">2023</div>
-            <p className="timeline-description">
-              Established a new production unit in Himachal Pradesh.
-            </p>
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical Timeline */}
+          <div className="border-l-4 border-red-600">
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                1997
+              </div>
+              <p className="text-gray-700">
+                Founded in Okhla by Virender Singh and Naresh Thakur, focusing on components for the TV industry.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2001
+              </div>
+              <p className="text-gray-700">
+                Began mass production of CFL inductor components.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2006
+              </div>
+              <p className="text-gray-700">
+                Shifted operations to a larger unit in Okhla.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2012
+              </div>
+              <p className="text-gray-700">
+                Reached the milestone of producing 1 million components.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2019
+              </div>
+              <p className="text-gray-700">
+                Launched a new production line for lamination transformers up to 5KVA.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2020
+              </div>
+              <p className="text-gray-700">
+                Expanded production for EV chargers and solar inverters.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2021
+              </div>
+              <p className="text-gray-700">
+                Surpassed 3 million components production milestone.
+              </p>
+            </div>
+            <div className="timeline-item mb-8 pl-8 relative">
+              <div className="absolute -left-5 top-0 w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">
+                2023
+              </div>
+              <p className="text-gray-700">
+                Established a new production unit in Himachal Pradesh.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -92,4 +111,3 @@ function About() {
 }
 
 export default About;
-
