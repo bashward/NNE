@@ -1,7 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Products() {
+  const [selectedProduct, setSelectedProduct] = useState(null); // Track selected product
+  const navigate = useNavigate();
+
   const products = [
     {
       name: 'Ferrite Transformers',
@@ -29,6 +32,13 @@ function Products() {
     },
   ];
 
+  const handleProductClick = (product, index) => {
+    setSelectedProduct(index); // Set the selected product for animation
+    setTimeout(() => {
+      navigate(product.link); // Navigate to the product page after animation
+    }, 500); // Delay navigation for smooth transition
+  };
+
   return (
     <div className="py-16 px-8 bg-gray-50">
       <h1 className="text-4xl font-bold text-center mb-12 animate-fadeIn">
@@ -40,17 +50,18 @@ function Products() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
         {products.map((product, index) => (
-          <Link
-            to={product.link}
+          <div
             key={index}
-            className="group relative bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition transform duration-300 animate-slideUp"
-            style={{ animationDelay: `${index * 100}ms` }}
+            onClick={() => handleProductClick(product, index)}
+            className={`group relative bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transform transition-transform duration-300 cursor-pointer ${
+              selectedProduct === index ? 'scale-105 z-50' : ''
+            }`}
           >
             {/* Image Section */}
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-52 object-cover transition duration-300"
+              className="w-full h-52 object-cover group-hover:brightness-90 transition duration-300"
             />
 
             {/* Overlay with Default Visibility */}
@@ -63,7 +74,7 @@ function Products() {
               </h2>
               <p className="text-sm text-gray-200">{product.description}</p>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </div>
