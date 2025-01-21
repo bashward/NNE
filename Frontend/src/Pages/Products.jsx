@@ -6,25 +6,25 @@ function Products() {
     {
       name: 'Ferrite Transformers',
       description: 'High-efficiency transformers for industrial and commercial applications.',
-      image: '/ferrite-transformer.png',
+      image: '/transformer.png',
       link: '/products/ferrite-transformers',
     },
     {
       name: 'Toroidal Coils',
       description: 'Precision-engineered toroidal coils for compact and noise-sensitive environments.',
-      image: '/toroidal-coil.png',
+      image: '/toroidal.png',
       link: '/products/toroidal-coils',
     },
     {
       name: 'Inductors',
       description: 'Custom inductors designed for high-performance power electronics.',
-      image: '/transformer.jpg',
+      image: '/inductors.png',
       link: '/products/inductors',
     },
     {
       name: 'Custom Solutions',
       description: 'Tailored solutions for unique technical and application requirements.',
-      image: '/toroidal.png',
+      image: '/custom-solutions.png',
       link: '/products/custom-solutions',
     },
   ];
@@ -50,11 +50,11 @@ function Products() {
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-52 object-cover group-hover:brightness-90 transition duration-300"
+              className="w-full h-52 object-cover transition duration-300"
             />
 
-            {/* Overlay on Hover */}
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-70 transition duration-300"></div>
+            {/* Overlay with Default Visibility */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60 group-hover:opacity-90 transition duration-300"></div>
 
             {/* Content */}
             <div className="absolute bottom-4 left-4 z-10">
