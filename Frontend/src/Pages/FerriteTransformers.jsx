@@ -1,4 +1,5 @@
 import React from 'react';
+import FerriteTable from './Components/FerriteTable.jsx'
 
 function FerriteTransformers() {
   return (
@@ -12,8 +13,11 @@ function FerriteTransformers() {
         <img
           src="/transformer.png"
           alt="Ferrite Transformer"
-          className="w-full h-auto mb-8 rounded-lg shadow-lg"
+          className="w-20 h-auto mb-8 rounded-lg shadow-lg"
         />
+        <div>
+        <FerriteTable/>
+        </div>
         <h2 className="text-2xl font-bold mb-4">Key Features</h2>
         <ul className="list-disc list-inside text-gray-700 mb-8">
           <li>High efficiency for demanding applications.</li>
