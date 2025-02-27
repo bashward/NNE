@@ -25,11 +25,11 @@ function Home() {
 
         <div className="flex flex-row items-center space-x-8">
           {/* Transformer Image */}
-          <div className="relative w-64 h-auto inline-block rotate-90">
+          <div className="relative w-64 h-auto inline-block">
             <img
               src="/transformer.png"
               alt="Transformer"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain rotate-90"
             />
             {/* Hotspot */}
             <div
@@ -68,11 +68,11 @@ function Home() {
           </div>
 
           {/* Toroidal Coil Image */}
-          <div className="relative w-64 h-auto inline-block rotate-90">
+          <div className="relative w-64 h-auto inline-block">
             <img
               src="/toroidal.png"
               alt="Toroidal Coil"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain rotate-270"
             />
             {/* Hotspot */}
             <div
