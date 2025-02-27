@@ -7,7 +7,7 @@ import About from './Pages/About';
 import Products from './Pages/Products';
 import Contact from './Pages/Contact';
 import FerriteTransformers from './Pages/FerriteTransformers';
-import Quality from './Pages/Quality';
+
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/quality" element={<Quality />} />
+          
            <Route path="/products/ferrite-transformers" element={<FerriteTransformers />} />
         </Routes>
       </div>
