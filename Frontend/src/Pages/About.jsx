@@ -105,7 +105,7 @@ function About() {
           Our Quality Control and Assurance (QC &A) division is monitored by well-qualified and experienced professionals, who conduct stringent quality checks at various stages of the production process to ensure the international quality standard of our products.
           </p>
 
-         <h2 className="text-3xl font-semibold text-left mt-5 mb-8">Total Quality Management by means of:</h2>
+         <h2 className="text-xl font-semibold text-center mt-5 mb-8">Total Quality Management by means of:</h2>
          <p className="text-gray-700 text-center max-w-4xl mx-auto">
          <ul>
             <li>Well-laid process and system to ensure compliance & regular audit. Stringent quality control norms and standards are maintained by our trained personnel.</li>
