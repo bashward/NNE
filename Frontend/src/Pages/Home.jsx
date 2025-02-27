@@ -61,7 +61,7 @@ function Home() {
                     whitespace-normal
                   "
                 >
-                  High-Purity Copper Windings
+                  High-Purity Copper Windings 
                 </div>
               </div>
             </div>
