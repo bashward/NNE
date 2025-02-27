@@ -121,7 +121,7 @@ function Home() {
               className="absolute group"
               style={{
                 top: '50%',
-                left: '40%',
+                left: '50%',
               }}
             >
               <div 
@@ -146,7 +146,7 @@ function Home() {
                     whitespace-normal
                   "
                 >
-                  Precision Wound Coil
+                  Premium Quality Material
                 </div>
               </div>
             </div>
