@@ -30,7 +30,7 @@ function About() {
     description: 'Surpassed 3 million components production milestone.',
     },
     {year: '2023',
-    description: 'Established a new production unit in Himachal Pradesh.<br/> Established new startup for manufacturing of wire harnesses, power pin plugs.',
+    description: 'Established a new production unit in Himachal Pradesh.\nEstablished new startup for manufacturing of wire harnesses, power pin plugs.',
     },
   ];
   
@@ -50,18 +50,25 @@ function About() {
    <div className="relative max-w-4xl mx-auto">
         <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-red-600 h-full"></div>
 
-        {timelineEvents.map((event, index) => (
-          <div
-            key={index}
-            className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} mb-12`}
-          >
-            <div className={`w-1/2 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
-              <h3 className="text-xl font-semibold text-gray-900">{event.year}</h3>
-              <p className="text-gray-600">{event.description}</p>
-            </div>
-            <div className="relative w-4 h-4 bg-red-600 rounded-full z-10 border-4 border-white"></div>
-          </div>
-        ))}
+       {timelineEvents.map((event, index) => (
+  <div
+    key={index}
+    className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} mb-12`}
+  >
+    {/* Left / Right Side - Text Content */}
+    <div className={`w-1/2 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+      <h3 className="text-xl font-semibold text-gray-900">{event.year}</h3>
+      {/* Splitting the description into separate lines */}
+      {event.description.split('\n').map((line, i) => (
+        <p key={i} className="text-gray-600 leading-tight">{line}</p>
+      ))}
+    </div>
+
+    {/* Timeline Dot */}
+    <div className="relative w-4 h-4 bg-red-600 rounded-full z-10 border-4 border-white"></div>
+  </div>
+))}
+
       </div>
 
       {/* Vision Section */}
