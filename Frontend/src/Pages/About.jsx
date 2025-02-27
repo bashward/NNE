@@ -106,24 +106,24 @@ function About() {
           </p>
 
          <h2 className="text-xl font-semibold text-center mt-5 mb-8">Total Quality Management by means of:</h2>
-         <p className="text-gray-700 text-center max-w-4xl mx-auto">
-         <ul className="list-disc pl-5 space-y-2">
+         
+         <ul className="text-gray-700 text-center max-w-4xl mx-auto list-disc pl-5 space-y-1">
             <li>Well-laid process and system to ensure compliance & regular audit. Stringent quality control norms and standards are maintained by our trained personnel.</li>
             <li>Continuous emphasis on quality control at each level of the production stage. Defined quality Parameters/AQL charts.</li>
             <li>A vigilant QA team, dedicated to the continuous improvement of our products & services.</li>
             <li>Meticulous attention towards the quality of raw material procurement.</li>
             <li>In-house modern testing equipment.</li>
          </ul>
-         </p>
+        
 
          <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Objectives</h2>
-         <p className="text-gray-700 text-center max-w-4xl mx-auto">
-         <ol className="list-decimal pl-5 space-y-2">
+         
+         <ol className="text-gray-700 text-center max-w-4xl mx-auto list-decimal pl-5 space-y-1">
           <li>Total customer satisfaction by consistent delivery of the products conforming to Quality & Cost.</li>
          <li>Ensure a safe working environment for all its employees.</li>
          <li>Upgradation of skill and motivation of the workforce to make them valuable Associates in achieving the company's overall Quality objectives.</li>
          </ol>
-         </p>
+         
       </section>
 
       {/* Closing Section */}
