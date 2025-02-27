@@ -8,9 +8,9 @@ function Navbar() {
         <img style={{ width: '200px', height: 'auto' }} src={require("../Content/logo.png")} alt="logo" />
       </Link>
       <div className="space-x-6">
-        <Link to="/about" className="hover:text-red-600">About</Link>
-        <Link to="/products" className="hover:text-red-600">Products</Link>
-        <Link to="/contact" className="hover:text-red-600">Contact</Link>
+        <Link to="/about" className="hover:text-red-600 text-lg">About</Link>
+        <Link to="/products" className="hover:text-red-600 text-lg">Products</Link>
+        <Link to="/contact" className="hover:text-red-600 text-lg">Contact</Link>
       </div>
     </nav>
   );
