@@ -1,5 +1,5 @@
 import React from 'react';
-import FerriteTable from './Components/FerriteTable.jsx'
+import FerriteTable from '../Components/FerriteTable.jsx'
 
 function FerriteTransformers() {
   return (
