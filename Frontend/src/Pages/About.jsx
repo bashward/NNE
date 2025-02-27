@@ -85,13 +85,13 @@ function About() {
 
       {/* Vision Section */}
       <section ref={qualityRef} className="mb-16 bg-white py-12 px-8 shadow-lg rounded-lg">
-        <h1 className="text-5xl font-semibold text-center mb-8">Our Quality</h1> 
+        <h1 className="text-5xl font-semibold text-center pb-4 mb-8">Our Quality</h1> 
           <p className="text-gray-700 text-center max-w-4xl mx-auto">
           Our Quality management system is specially designed by ourselves to minimize the quality failures and with quick action plans which not only relieve our customers of hectic troubles but also from the quality dilemmas. Quality and timely delivery of components to the customers has been our foremost motto, which we confidently stress as being our strength in the industry. Furthermore, the stiff competitiveness have not dithered us to out-source. At NNE, we have 100% in-house production capacity which ensures that the components delivered to the customers goes through stringent quality checks at every step of its journey. Being an ISO-9001:2015, at NNE, we ensure our internal systems are at par with the Industrial Standards.
           </p>
 
          <div className="bg-gray-50">
-            <div className="pt-4 pb-4">
+            <div className="px-4">
         <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Our Vision</h2>
         <blockquote className="italic text-lg text-center text-gray-700 max-w-4xl mx-auto mb-4">
           "To provide PPM-quality components to diversified segments of industries,
@@ -112,7 +112,7 @@ function About() {
           </p>
         
           <div className="bg-gray-50">
-             <div className="pt-4 pb-4">
+             <div className="px-4">
          <h2 className="text-xl font-semibold text-center mt-5 mb-8">Total Quality Management by means of:</h2>
          
          <ul className="text-gray-700 text-left max-w-4xl mx-auto list-disc pl-5 space-y-1">
