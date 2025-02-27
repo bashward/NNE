@@ -91,6 +91,7 @@ function About() {
           </p>
 
          <div className="bg-gray-50">
+            <div className="pt-4 pb-4">
         <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Our Vision</h2>
         <blockquote className="italic text-lg text-center text-gray-700 max-w-4xl mx-auto mb-4">
           "To provide PPM-quality components to diversified segments of industries,
@@ -100,6 +101,7 @@ function About() {
           At N.N. Magnetics & Electronics Pvt. Ltd., we prioritize quality and reliability, ensuring customer satisfaction through stringent checks and innovative solutions. With a commitment to <span className="font-bold">ISO-9001:2015, ISO-14001:2018, ISO 14001:2015 and ISO/TS-16949:2009</span> standards, we aim to support uninterrupted power supply with world-class magnetic components.
         </p>
          </div>
+            </div>
 
         
           <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Policy</h2>
@@ -110,6 +112,7 @@ function About() {
           </p>
         
           <div className="bg-gray-50">
+             <div className="pt-4 pb-4">
          <h2 className="text-xl font-semibold text-center mt-5 mb-8">Total Quality Management by means of:</h2>
          
          <ul className="text-gray-700 text-left max-w-4xl mx-auto list-disc pl-5 space-y-1">
@@ -120,6 +123,7 @@ function About() {
             <li>In-house modern testing equipment.</li>
          </ul>
         </div>
+             </div>
         
          
          <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Objectives</h2>
