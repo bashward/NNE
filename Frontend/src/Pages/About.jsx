@@ -30,7 +30,7 @@ function About() {
     description: 'Surpassed 3 million components production milestone.',
     },
     {year: '2023',
-    description: 'Established a new production unit in Himachal Pradesh.\nEstablished new startup for manufacturing of wire harnesses, power pin plugs.',
+    description: 'Established a new production unit in Himachal Pradesh.\nEstablished new startup for manufacturing of wire harnesses, power cords and DC pin cords.',
     },
   ];
   
