@@ -25,7 +25,7 @@ function Home() {
 
         <div className="flex flex-row items-center space-x-8">
           {/* Transformer Image */}
-          <div className="relative w-64 h-auto inline-block">
+          <div className="relative w-64 h-auto inline-block rotate-90">
             <img
               src="/transformer.png"
               alt="Transformer"
@@ -68,7 +68,7 @@ function Home() {
           </div>
 
           {/* Toroidal Coil Image */}
-          <div className="relative w-64 h-auto inline-block">
+          <div className="relative w-64 h-auto inline-block rotate-90">
             <img
               src="/toroidal.png"
               alt="Toroidal Coil"
