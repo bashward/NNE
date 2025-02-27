@@ -7,22 +7,40 @@ function Products() {
 
   const products = [
     {
-      name: 'Ferrite Transformers',
-      description: 'High-efficiency transformers for industrial and commercial applications.',
+      name: 'Ferrite Core',
+      description: 'All geometries available',
       image: '/transformer.png',
       link: '/products/ferrite-transformers',
     },
     {
-      name: 'Toroidal Coils',
-      description: 'Precision-engineered toroidal coils for compact and noise-sensitive environments.',
+      name: '  Drum Core',
+      description: 'All geometries available.',
       image: '/toroidal.png',
       link: '/products/toroidal-coils',
     },
     {
-      name: 'Inductors',
-      description: 'Custom inductors designed for high-performance power electronics.',
+      name: 'High Frequency Components',
+      description: 'High Efficiency Transformers for industrial and commercial applications.',
       image: '/inductors.png',
       link: '/products/inductors',
+    },
+    {
+      name: 'Low Frequency components',
+      description: 'High efficiency Transformers for industrial and commercial applications.',
+      image: '',
+      link: '',
+    },
+    {
+      name: 'Powder Core',
+      description: 'Efficient solution for your power circuits.',
+      image: '',
+      link: '',
+    },
+    {
+      name: 'Bobbins',
+      description: 'All geometries available',
+      image: '',
+      link: '',
     },
     {
       name: 'Custom Solutions',
