@@ -7,19 +7,25 @@ function Products() {
 
   const products = [
     {
-      name: 'Ferrite Core',
-      description: 'All geometries available',
+      name: 'Ferrite Core Transformers',
+      description: 'High Efficiency Transformers for industrial and commercial applications.',
       image: '/transformer.png',
       link: '/products/ferrite-transformers',
     },
     {
-      name: '  Drum Core',
+      name: 'Drum Core, Rod Core & Air Coil Inductors',
       description: 'All geometries available.',
       image: '/toroidal.png',
       link: '/products/toroidal-coils',
     },
     {
-      name: 'High Frequency Components',
+      name: 'Toroidal Inductors',
+      description: 'Efficient Inductors for industry standards.',
+      image: '',
+      link: '',
+    },
+    {
+      name: 'Common Mode Chokes/ Differential Mode Chokes',
       description: 'High Efficiency Transformers for industrial and commercial applications.',
       image: '/inductors.png',
       link: '/products/inductors',
@@ -30,8 +36,20 @@ function Products() {
       image: '',
       link: '',
     },
+      {
+      name: 'Ferrite Cores',
+      description: 'All geometries available',
+      image: '/transformer.png',
+      link: '/products/ferrite-transformers',
+    },
+     {
+      name: '  Drum Cores',
+      description: 'All geometries available.',
+      image: '/toroidal.png',
+      link: '/products/toroidal-coils',
+    },
     {
-      name: 'Powder Core',
+      name: 'Powder Cores',
       description: 'Efficient solution for your power circuits.',
       image: '',
       link: '',
