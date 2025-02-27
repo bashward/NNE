@@ -31,7 +31,7 @@ function Products() {
       link: '/products/inductors',
     },
     {
-      name: 'Low Frequency components',
+      name: 'Low Frequency Transformers',
       description: 'High efficiency Transformers for industrial and commercial applications.',
       image: '',
       link: '',
