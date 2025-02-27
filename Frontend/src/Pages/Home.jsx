@@ -29,13 +29,13 @@ function Home() {
             <img
               src="/transformer.png"
               alt="Transformer"
-              className="w-full h-auto object-contain rotate-90"
+              className="w-full h-auto object-contain -rotate-90"
             />
             {/* Hotspot */}
             <div
               className="absolute group"
               style={{
-                top: '50%',
+                top: '20%',
                 left: '60%',
               }}
             >
