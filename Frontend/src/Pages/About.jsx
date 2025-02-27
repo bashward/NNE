@@ -1,6 +1,17 @@
 import React from 'react';
 
 function About() {
+   const qualityRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#quality" && qualityRef.current) {
+      setTimeout(() => {
+        qualityRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100); 
+    }
+  }, [location]);
+  
   const timelineEvents = [
     {
       year: '1997',
@@ -72,7 +83,7 @@ function About() {
       </div>
 
       {/* Vision Section */}
-      <section className="mb-16 bg-white py-12 px-8 shadow-lg rounded-lg">
+      <section ref={qualityRef} className="mb-16 bg-white py-12 px-8 shadow-lg rounded-lg">
         <h2 className="text-3xl font-semibold text-center mb-8">Our Vision</h2>
         <blockquote className="italic text-lg text-center text-gray-700 max-w-4xl mx-auto mb-4">
           "To provide PPM-quality components to diversified segments of industries,
