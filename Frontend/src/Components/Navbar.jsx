@@ -9,7 +9,7 @@ function Navbar() {
       </Link>
       <div className="space-x-6">
         <Link to="/about" className="hover:text-red-600 text-lg">About</Link>
-        <Link to="/quality" className="hover:text-red-600 text-lg">Quality</Link>
+        <Link to="/about#quality" className="hover:text-red-600 text-lg">Quality</Link>
         <Link to="/products" className="hover:text-red-600 text-lg">Products</Link>
         <Link to="/contact" className="hover:text-red-600 text-lg">Contact</Link>
       </div>
