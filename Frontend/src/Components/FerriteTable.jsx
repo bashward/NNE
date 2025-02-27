@@ -12,10 +12,10 @@ const FerriteTable = () => {
     ["EE1230", "ETD4145", "EER2511", "EER2818", "EP15", "EI3209P", "RM6", "PQ2059", "EP15", "UU1101", "P10610"],
     ["EE1304", "ETD4917", "ER3913P", "IP20", "B3313P", "RM5", "PQ2610", "IP20", "UU1220", "P2010"],
     ["EE1405", "ETD5919", "EER2511A", "EER3019", "B3551T", "RM5", "PQ2616", "IP25", "UU1301", "P2512"],
-    ["EE1608", "EEH318A", "EB4012", "PQ2620", "UU1410", "P2522", "—", "—", "—", "—", "—", "—"],  // Placeholder to maintain structure
-    ["EE1804P", "EEH3522", "EB349P", "PQ2920", "UU1620", "P2748", "—", "—", "—", "—", "—", "—"], 
-    ["EE1905", "EI405P", "PQ3230", "UU1650C", "PT8311", "—", "—", "—", "—", "—", "—", "—"],
-    ["EE1950S", "EI4204", "EH2504", "PQ3535", "UU1910", "P72311", "—", "—", "—", "—", "—", "—"]
+    ["EE1608", "EEH318A", "EB4012", "PQ2620", "UU1410", "P2522"],
+    ["EE1804P", "EEH3522", "EB349P", "PQ2920", "UU1620", "P2748"],
+    ["EE1905", "EI405P", "PQ3230", "UU1650C", "PT8311","P72311"],
+    ["EE1950S", "EI4204", "EH2504", "PQ3535", "UU1910"],
   ];
 
   return (
@@ -36,11 +36,8 @@ const FerriteTable = () => {
             {tableData.map((row, rowIndex) => (
               <tr key={rowIndex} className="odd:bg-white even:bg-gray-100">
                 {row.map((cell, cellIndex) => (
-                  <td 
-                    key={cellIndex} 
-                    className="border border-gray-400 px-4 py-2 min-h-12 text-center"
-                  >
-                    {cell || "—"} {/* Display placeholder if empty */}
+                  <td key={cellIndex} className="border border-gray-400 px-4 py-2">
+                    {cell}
                   </td>
                 ))}
               </tr>
