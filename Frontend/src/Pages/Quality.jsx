@@ -7,4 +7,4 @@ return (
 );
 }
 
-export Quality default
+export default Quality
