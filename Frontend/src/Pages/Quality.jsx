@@ -14,7 +14,7 @@ return (
         </p>
       </section>
 
-   <\div>
+    </div>
 
 );
 }
