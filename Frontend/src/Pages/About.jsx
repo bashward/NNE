@@ -91,7 +91,7 @@ function About() {
           </p>
 
          <div className="bg-gray-50">
-            <div className="px-4">
+            <div className="pt-4">
         <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Our Vision</h2>
         <blockquote className="italic text-lg text-center text-gray-700 max-w-4xl mx-auto mb-4">
           "To provide PPM-quality components to diversified segments of industries,
@@ -112,8 +112,8 @@ function About() {
           </p>
         
           <div className="bg-gray-50">
-             <div className="px-4">
-         <h2 className="text-xl font-semibold text-center mt-5 mb-8">Total Quality Management by means of:</h2>
+             <div className="pt-4">
+         <h2 className="text-xl font-semibold text-left ml-5 mt-5 mb-8">Total Quality Management by means of:</h2>
          
          <ul className="text-gray-700 text-left max-w-4xl mx-auto list-disc pl-5 space-y-1">
             <li>Well-laid process and system to ensure compliance & regular audit. Stringent quality control norms and standards are maintained by our trained personnel.</li>
