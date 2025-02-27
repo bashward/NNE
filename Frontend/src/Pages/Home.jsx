@@ -35,7 +35,7 @@ function Home() {
             <div
               className="absolute group"
               style={{
-                top: '20%',
+                top: '35%',
                 left: '60%',
               }}
             >
