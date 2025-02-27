@@ -72,7 +72,7 @@ function Home() {
             <img
               src="/toroidal.png"
               alt="Toroidal Coil"
-              className="w-full h-auto object-contain rotate-270"
+              className="w-full h-auto object-contain rotate-180"
             />
             {/* Hotspot */}
             <div
