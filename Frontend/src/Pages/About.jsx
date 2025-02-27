@@ -89,7 +89,7 @@ function About() {
           <p className="text-gray-700 text-center max-w-4xl mx-auto">
           Our Quality management system is specially designed by ourselves to minimize the quality failures and with quick action plans which not only relieve our customers of hectic troubles but also from the quality dilemmas. Quality and timely delivery of components to the customers has been our foremost motto, which we confidently stress as being our strength in the industry. Furthermore, the stiff competitiveness have not dithered us to out-source. At NNE, we have 100% in-house production capacity which ensures that the components delivered to the customers goes through stringent quality checks at every step of its journey. Being an ISO-9001:2015, at NNE, we ensure our internal systems are at par with the Industrial Standards.
           </p>
-        <h2 className="text-3xl font-semibold text-center mb-8">Our Vision</h2>
+        <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Our Vision</h2>
         <blockquote className="italic text-lg text-center text-gray-700 max-w-4xl mx-auto mb-4">
           "To provide PPM-quality components to diversified segments of industries,
           leveraging the best available technology."
@@ -97,6 +97,33 @@ function About() {
         <p className="text-gray-700 text-center max-w-4xl mx-auto">
           At N.N. Magnetics & Electronics Pvt. Ltd., we prioritize quality and reliability, ensuring customer satisfaction through stringent checks and innovative solutions. With a commitment to <span className="font-bold">ISO-9001:2015, ISO-14001:2018, ISO 14001:2015 and ISO/TS-16949:2009</span> standards, we aim to support uninterrupted power supply with world-class magnetic components.
         </p>
+
+          <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Policy</h2>
+          <p className="text-gray-700 text-center max-w-4xl mx-auto">
+          “M/S N.N ELECTRONICS Strongly believes in the policy of quality assurance with Customer Centric adoption. It has been our continuous Endeavour, not to compromise with the quality of our products in any circumstances and meeting the customer requirements/parameters.”
+
+          Our Quality Control and Assurance (QC &A) division is monitored by well-qualified and experienced professionals, who conduct stringent quality checks at various stages of the production process to ensure the international quality standard of our products.
+          </p>
+
+         <h2 className="text-3xl font-semibold text-left mt-5 mb-8">Total Quality Management by means of:</h2>
+         <p className="text-gray-700 text-center max-w-4xl mx-auto">
+         <ul>
+            <li>Well-laid process and system to ensure compliance & regular audit. Stringent quality control norms and standards are maintained by our trained personnel.</li>
+            <li>Continuous emphasis on quality control at each level of the production stage. Defined quality Parameters/AQL charts.</li>
+            <li>A vigilant QA team, dedicated to the continuous improvement of our products & services.</li>
+            <li>Meticulous attention towards the quality of raw material procurement.</li>
+            <li>In-house modern testing equipment.</li>
+         </ul>
+         </p>
+
+         <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Objectives</h2>
+         <p className="text-gray-700 text-center max-w-4xl mx-auto">
+         <ol>
+          <li>Total customer satisfaction by consistent delivery of the products conforming to Quality & Cost.</li>
+         <li>Ensure a safe working environment for all its employees.</li>
+         <li>Upgradation of skill and motivation of the workforce to make them valuable Associates in achieving the company's overall Quality objectives.</li>
+         </ol>
+         </p>
       </section>
 
       {/* Closing Section */}
