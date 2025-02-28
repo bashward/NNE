@@ -10,7 +10,7 @@ function Navbar() {
         <img 
           src={logo} 
           alt="logo" 
-          className="h-16 md:h-20 w-auto" // 👈 Adjusted size for different screen sizes
+          className="w-16 md:w-20 h-auto" // 👈 Adjusted size for different screen sizes
         />
       </Link>
 
