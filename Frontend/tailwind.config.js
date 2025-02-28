@@ -5,7 +5,7 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn 0.8s ease-in-out',
         slideUp: 'slideUp 0.8s ease-in-out',
-        scroll: 'scroll 40s linear infinite',
+        scroll: 'scroll 60s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -18,10 +18,21 @@ module.exports = {
         },
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(-100%)' },
         }
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.animation-paused': {
+          'animation-play-state': 'paused',
+        },
+        '.animation-running': {
+          'animation-play-state': 'running',
+        },
+      })
+    })
+  ],
 };
