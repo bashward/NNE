@@ -23,176 +23,76 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center space-x-8">
-          {/* Transformer Image */}
-          <div className="relative w-64 h-auto inline-block">
-            <img
-              src="/transformer.png"
-              alt="Transformer"
-              className="w-full h-auto object-contain -rotate-90"
-            />
-            {/* Hotspot */}
-            <div
-              className="absolute group"
-              style={{
-                top: '35%',
-                left: '60%',
-              }}
-            >
-              <div 
-                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
-              >
-                <div 
-                  className="
-                    hidden 
-                    group-hover:block 
-                    absolute
-                    bottom-[110%] 
-                    left-1/2
-                    -translate-x-1/2
-                    bg-white
-                    text-black
-                    text-sm
-                    p-2
-                    border
-                    shadow
-                    rounded
-                    z-50
-                    whitespace-normal
-                  "
-                >
-                  High-Purity Copper Windings 
+         <div className="overflow-hidden w-full">
+          <div className="flex items-center space-x-8 w-[200%] animate-scroll">
+            {/* Duplicated set of images for seamless looping */}
+            {[...Array(2)].map((_, setIndex) => (
+              <React.Fragment key={setIndex}>
+                {/* Transformer Image */}
+                <div className="relative w-64 h-auto flex-shrink-0">
+                  <img
+                    src="/transformer.png"
+                    alt="Transformer"
+                    className="w-full h-auto object-contain -rotate-90"
+                  />
+                  <div className="absolute group" style={{ top: '35%', left: '60%' }}>
+                    <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+                      <div className="hidden group-hover:block absolute bottom-[110%] left-1/2 -translate-x-1/2 bg-white text-black text-sm p-2 border shadow rounded z-50 whitespace-normal">
+                        High-Purity Copper Windings
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Toroidal Coil Image */}
-          <div className="relative w-64 h-auto inline-block">
-            <img
-              src="/toroidal.png"
-              alt="Toroidal Coil"
-              className="w-full h-auto object-contain -rotate-90"
-            />
-            {/* Hotspot */}
-            <div
-              className="absolute group"
-              style={{
-                top: '50%',
-                left: '40%',
-              }}
-            >
-              <div 
-                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
-              >
-                <div 
-                  className="
-                    hidden 
-                    group-hover:block 
-                    absolute
-                    bottom-[110%]
-                    left-1/2
-                    -translate-x-1/2
-                    bg-white
-                    text-black
-                    text-sm
-                    p-2
-                    border
-                    shadow
-                    rounded
-                    z-50
-                    whitespace-normal
-                  "
-                >
-                  Precision Wound Coil
+                {/* Toroidal Coil Image */}
+                <div className="relative w-64 h-auto flex-shrink-0">
+                  <img
+                    src="/toroidal.png"
+                    alt="Toroidal Coil"
+                    className="w-full h-auto object-contain -rotate-90"
+                  />
+                  <div className="absolute group" style={{ top: '50%', left: '40%' }}>
+                    <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+                      <div className="hidden group-hover:block absolute bottom-[110%] left-1/2 -translate-x-1/2 bg-white text-black text-sm p-2 border shadow rounded z-50 whitespace-normal">
+                        Precision Wound Coil
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-
-           <div className="relative w-64 h-auto inline-block">
-            <img
-              src="/small-tx2.png"
-              alt="Toroidal Coil"
-              className="w-full h-auto object-contain -rotate-90"
-            />
-            {/* Hotspot */}
-            <div
-              className="absolute group"
-              style={{
-                top: '50%',
-                left: '40%',
-              }}
-            >
-              <div 
-                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
-              >
-                <div 
-                  className="
-                    hidden 
-                    group-hover:block 
-                    absolute
-                    bottom-[110%]
-                    left-1/2
-                    -translate-x-1/2
-                    bg-white
-                    text-black
-                    text-sm
-                    p-2
-                    border
-                    shadow
-                    rounded
-                    z-50
-                    whitespace-normal
-                  "
-                >
-                  Precision Wound Coil
+                {/* Small TX2 Image */}
+                <div className="relative w-64 h-auto flex-shrink-0">
+                  <img
+                    src="/small-tx2.png"
+                    alt="Small Transformer"
+                    className="w-full h-auto object-contain -rotate-90"
+                  />
+                  <div className="absolute group" style={{ top: '50%', left: '40%' }}>
+                    <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+                      <div className="hidden group-hover:block absolute bottom-[110%] left-1/2 -translate-x-1/2 bg-white text-black text-sm p-2 border shadow rounded z-50 whitespace-normal">
+                        Compact Design
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div className="relative w-64 h-auto inline-block">
-            <img
-              src="/small-tx.png"
-              alt="Toroidal Coil"
-              className="w-full h-auto object-contain"
-            />
-            {/* Hotspot */}
-            <div
-              className="absolute group"
-              style={{
-                top: '50%',
-                left: '50%',
-              }}
-            >
-              <div 
-                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
-              >
-                <div 
-                  className="
-                    hidden 
-                    group-hover:block 
-                    absolute
-                    bottom-[110%]
-                    left-1/2
-                    -translate-x-1/2
-                    bg-white
-                    text-black
-                    text-sm
-                    p-2
-                    border
-                    shadow
-                    rounded
-                    z-50
-                    whitespace-normal
-                  "
-                >
-                  Premium Quality Material
+                {/* Small TX Image */}
+                <div className="relative w-64 h-auto flex-shrink-0">
+                  <img
+                    src="/small-tx.png"
+                    alt="Small Transformer"
+                    className="w-full h-auto object-contain"
+                  />
+                  <div className="absolute group" style={{ top: '50%', left: '50%' }}>
+                    <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+                      <div className="hidden group-hover:block absolute bottom-[110%] left-1/2 -translate-x-1/2 bg-white text-black text-sm p-2 border shadow rounded z-50 whitespace-normal">
+                        Premium Quality Material
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </section>
