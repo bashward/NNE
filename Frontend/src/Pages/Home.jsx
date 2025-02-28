@@ -1,37 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
+
 
 function Home() {
-  const marqueeRef = useRef(null);
-
-  useEffect(() => {
-    const marquee = marqueeRef.current;
-    let isHovered = false;
-
-    const animateMarquee = () => {
-      if (!isHovered) {
-        marquee.style.transition = "transform 0.5s linear";
-        marquee.style.transform = `translateX(-100%)`;
-        setTimeout(() => {
-          marquee.appendChild(marquee.firstElementChild);
-          marquee.style.transition = "none";
-          marquee.style.transform = "translateX(0)";
-        }, 500);
-      }
-    };
-
-    const interval = setInterval(animateMarquee, 2000); // Change speed by adjusting the interval
-
-    marquee.addEventListener("mouseenter", () => (isHovered = true));
-    marquee.addEventListener("mouseleave", () => (isHovered = false));
-
-    return () => {
-      clearInterval(interval);
-      marquee.removeEventListener("mouseenter", () => (isHovered = true));
-      marquee.removeEventListener("mouseleave", () => (isHovered = false));
-    };
-  }, []);
 
   return (
     <div className="overflow-hidden">
@@ -56,22 +27,22 @@ function Home() {
 
         {/* Image Auto-Scrolling Carousel */}
         <div className="relative w-full overflow-hidden">
-          <div ref={marqueeRef} className="flex space-x-8">
+          <div className="flex space-x-8 animate-marquee hover:animate-none">
             {/* Transformer Image */}
             <div className="relative w-64 h-auto inline-block">
-              <img src="/transformer.png" alt="Transformer" className="w-full h-auto object-contain" />
+              <img src="/transformer.png" alt="Transformer" className="w-full h-auto object-contain -rotate-90" />
               <div className="absolute top-[35%] left-[60%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
             </div>
 
             {/* Toroidal Coil Image */}
             <div className="relative w-64 h-auto inline-block">
-              <img src="/toroidal.png" alt="Toroidal Coil" className="w-full h-auto object-contain" />
+              <img src="/toroidal.png" alt="Toroidal Coil" className="w-full h-auto object-contain -rotate-90" />
               <div className="absolute top-[50%] left-[40%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
             </div>
 
             {/* Small Transformer 2 */}
             <div className="relative w-64 h-auto inline-block">
-              <img src="/small-tx2.png" alt="Small Transformer 2" className="w-full h-auto object-contain" />
+              <img src="/small-tx2.png" alt="Small Transformer 2" className="w-full h-auto object-contain -rotate-90" />
               <div className="absolute top-[50%] left-[40%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
             </div>
 
