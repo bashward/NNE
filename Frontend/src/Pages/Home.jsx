@@ -23,10 +23,10 @@ function Home() {
           </div>
         </div>
 
-         <div className="overflow-hidden w-full">
-          <div className="flex items-center space-x-8 w-[200%] animate-scroll">
+         <div className="overflow-hidden w-full relative">
+          <div className="flex items-center space-x-8 w-[200%] animate-scroll animation-running group-hover:animation-paused">
             {/* Duplicated set of images for seamless looping */}
-            {[...Array(2)].map((_, setIndex) => (
+            {[...Array(3)].map((_, setIndex) => (
               <React.Fragment key={setIndex}>
                 {/* Transformer Image */}
                 <div className="relative w-64 h-auto flex-shrink-0">
@@ -94,6 +94,8 @@ function Home() {
               </React.Fragment>
             ))}
           </div>
+           <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-20" />
+  <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-20" />           
         </div>
       </section>
 
