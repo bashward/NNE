@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Home() {
-
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -25,23 +23,69 @@ function Home() {
           </div>
         </div>
 
-        {/* Image Auto-Scrolling Carousel */}
-  <div className="relative w-full overflow-hidden bg-white">
-      <div
-        ref={marqueeRef}
-        className="flex space-x-8 animate-marquee"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        {/* ✅ Dynamically loops images without manual duplication */}
-        {images.concat(images).map((item, index) => (
-          <div key={index} className="relative w-64 h-auto inline-block">
-            <img src={item.src} alt={`Image ${index}`} className="w-full h-auto object-contain -rotate-90" />
-            
-            {/* ✅ Hotspot with hover effect */}
-            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 group">
-              <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
-                <div
+        <div className="flex flex-row items-center space-x-8">
+          {/* Transformer Image */}
+          <div className="relative w-64 h-auto inline-block">
+            <img
+              src="/transformer.png"
+              alt="Transformer"
+              className="w-full h-auto object-contain -rotate-90"
+            />
+            {/* Hotspot */}
+            <div
+              className="absolute group"
+              style={{
+                top: '35%',
+                left: '60%',
+              }}
+            >
+              <div 
+                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
+              >
+                <div 
+                  className="
+                    hidden 
+                    group-hover:block 
+                    absolute
+                    bottom-[110%] 
+                    left-1/2
+                    -translate-x-1/2
+                    bg-white
+                    text-black
+                    text-sm
+                    p-2
+                    border
+                    shadow
+                    rounded
+                    z-50
+                    whitespace-normal
+                  "
+                >
+                  High-Purity Copper Windings 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Toroidal Coil Image */}
+          <div className="relative w-64 h-auto inline-block">
+            <img
+              src="/toroidal.png"
+              alt="Toroidal Coil"
+              className="w-full h-auto object-contain -rotate-90"
+            />
+            {/* Hotspot */}
+            <div
+              className="absolute group"
+              style={{
+                top: '50%',
+                left: '40%',
+              }}
+            >
+              <div 
+                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
+              >
+                <div 
                   className="
                     hidden 
                     group-hover:block 
@@ -60,14 +104,97 @@ function Home() {
                     whitespace-normal
                   "
                 >
-                  {item.text}
+                  Precision Wound Coil
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+
+
+           <div className="relative w-64 h-auto inline-block">
+            <img
+              src="/small-tx2.png"
+              alt="Toroidal Coil"
+              className="w-full h-auto object-contain -rotate-90"
+            />
+            {/* Hotspot */}
+            <div
+              className="absolute group"
+              style={{
+                top: '50%',
+                left: '40%',
+              }}
+            >
+              <div 
+                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
+              >
+                <div 
+                  className="
+                    hidden 
+                    group-hover:block 
+                    absolute
+                    bottom-[110%]
+                    left-1/2
+                    -translate-x-1/2
+                    bg-white
+                    text-black
+                    text-sm
+                    p-2
+                    border
+                    shadow
+                    rounded
+                    z-50
+                    whitespace-normal
+                  "
+                >
+                  Precision Wound Coil
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative w-64 h-auto inline-block">
+            <img
+              src="/small-tx.png"
+              alt="Toroidal Coil"
+              className="w-full h-auto object-contain"
+            />
+            {/* Hotspot */}
+            <div
+              className="absolute group"
+              style={{
+                top: '50%',
+                left: '50%',
+              }}
+            >
+              <div 
+                className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10"
+              >
+                <div 
+                  className="
+                    hidden 
+                    group-hover:block 
+                    absolute
+                    bottom-[110%]
+                    left-1/2
+                    -translate-x-1/2
+                    bg-white
+                    text-black
+                    text-sm
+                    p-2
+                    border
+                    shadow
+                    rounded
+                    z-50
+                    whitespace-normal
+                  "
+                >
+                  Premium Quality Material
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Intro Section */}
@@ -86,38 +213,62 @@ function Home() {
       </section>
 
       {/* Product Categories */}
-      <section className="py-16 px-8">
-        <h2 className="text-3xl font-semibold text-center mb-8">Our Product Range</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* Ferrite Transformers */}
-          <div
-            className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
-            onClick={() => window.location.href = '/products/ferrite-transformers'}
-          >
-            <h3 className="text-xl font-bold mb-2">Ferrite Transformers</h3>
-            <p className="text-gray-600">
-              Designed for high-frequency and high-power applications, offering unmatched efficiency and reliability.
-            </p>
+     <section className="py-16 px-8">
+  <h2 className="text-3xl font-semibold text-center mb-8">Our Product Range</h2>
+  <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    {/* Ferrite Transformers */}
+    <div
+      className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
+      onClick={() => window.location.href = '/products/ferrite-transformers'}
+    >
+      <h3 className="text-xl font-bold mb-2">Ferrite Transformers</h3>
+      <p className="text-gray-600">
+        Designed for high-frequency and high-power applications, offering unmatched efficiency and reliability.
+      </p>
+    </div>
+    {/* Toroidal Coils */}
+    <div
+      className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
+      onClick={() => window.location.href = '/products/toroidal-coils'}
+    >
+      <h3 className="text-xl font-bold mb-2">Toroidal Coils</h3>
+      <p className="text-gray-600">
+        Precision-engineered toroidal coils ideal for low-noise and compact power applications.
+      </p>
+    </div>
+    {/* Custom Solutions */}
+    <div
+      className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
+      onClick={() => window.location.href = '/products/custom-solutions'}
+    >
+      <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
+      <p className="text-gray-600">
+        Tailored to meet your specific technical requirements, ensuring optimal performance for every application.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+      {/* Value Proposition */}
+      <section className="py-16 px-8 bg-gray-100">
+        <h2 className="text-3xl font-semibold text-center mb-8">Why Choose Us?</h2>
+        <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="text-center">
+            <h4 className="font-bold mb-2">Premium Materials</h4>
+            <p className="text-gray-600">International-grade copper and ferrite cores for maximum durability.</p>
           </div>
-          {/* Toroidal Coils */}
-          <div
-            className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
-            onClick={() => window.location.href = '/products/toroidal-coils'}
-          >
-            <h3 className="text-xl font-bold mb-2">Toroidal Coils</h3>
-            <p className="text-gray-600">
-              Precision-engineered toroidal coils ideal for low-noise and compact power applications.
-            </p>
+          <div className="text-center">
+            <h4 className="font-bold mb-2">Unmatched Expertise</h4>
+            <p className="text-gray-600">A team of professionals with decades of experience in power electronics.</p>
           </div>
-          {/* Custom Solutions */}
-          <div
-            className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
-            onClick={() => window.location.href = '/products/custom-solutions'}
-          >
-            <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
-            <p className="text-gray-600">
-              Tailored to meet your specific technical requirements, ensuring optimal performance for every application.
-            </p>
+          <div className="text-center">
+            <h4 className="font-bold mb-2">Tailored Solutions</h4>
+            <p className="text-gray-600">Custom designs crafted to meet unique customer requirements.</p>
+          </div>
+          <div className="text-center">
+            <h4 className="font-bold mb-2">Customer Focus</h4>
+            <p className="text-gray-600">Dedicated to delivering exceptional support and technical assistance.</p>
           </div>
         </div>
       </section>
