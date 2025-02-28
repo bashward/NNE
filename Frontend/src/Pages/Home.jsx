@@ -26,33 +26,48 @@ function Home() {
         </div>
 
         {/* Image Auto-Scrolling Carousel */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex space-x-8 animate-marquee hover:animate-none">
-            {/* Transformer Image */}
-            <div className="relative w-64 h-auto inline-block">
-              <img src="/transformer.png" alt="Transformer" className="w-full h-auto object-contain -rotate-90" />
-              <div className="absolute top-[35%] left-[60%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
-            </div>
+      <div className="relative w-full overflow-hidden">
+  <div className="flex space-x-8 animate-marquee hover:paused">
+    {/* ✅ Double-mapped images for seamless looping */}
+    {[...Array(2)].map((_, repeatIndex) =>
+      ["/transformer.png", "/toroidal.png", "/small-tx2.png", "/small-tx.png"].map((src, index) => (
+        <div key={`${repeatIndex}-${index}`} className="relative w-64 h-auto inline-block">
+          <img src={src} alt={`Transformer ${index}`} className="w-full h-auto object-contain -rotate-90" />
 
-            {/* Toroidal Coil Image */}
-            <div className="relative w-64 h-auto inline-block">
-              <img src="/toroidal.png" alt="Toroidal Coil" className="w-full h-auto object-contain -rotate-90" />
-              <div className="absolute top-[50%] left-[40%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
-            </div>
-
-            {/* Small Transformer 2 */}
-            <div className="relative w-64 h-auto inline-block">
-              <img src="/small-tx2.png" alt="Small Transformer 2" className="w-full h-auto object-contain -rotate-90" />
-              <div className="absolute top-[50%] left-[40%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
-            </div>
-
-            {/* Small Transformer */}
-            <div className="relative w-64 h-auto inline-block">
-              <img src="/small-tx.png" alt="Small Transformer" className="w-full h-auto object-contain" />
-              <div className="absolute top-[50%] left-[50%] w-4 h-4 bg-red-600 ring-2 ring-white rounded-full"></div>
+          {/* ✅ Hotspots with hover text */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group">
+            <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+              <div
+                className="
+                  hidden 
+                  group-hover:block 
+                  absolute
+                  bottom-[110%]
+                  left-1/2
+                  -translate-x-1/2
+                  bg-white
+                  text-black
+                  text-sm
+                  p-2
+                  border
+                  shadow
+                  rounded
+                  z-50
+                  whitespace-normal
+                "
+              >
+                {index === 0 ? "High-Purity Copper Windings" : 
+                 index === 1 ? "Precision Wound Coil" : 
+                 index === 2 ? "Premium Quality Material" : 
+                 "Reliable Components"}
+              </div>
             </div>
           </div>
         </div>
+      ))
+    )}
+  </div>
+</div>
       </section>
 
       {/* Intro Section */}
