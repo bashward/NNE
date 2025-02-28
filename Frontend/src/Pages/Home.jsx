@@ -26,48 +26,48 @@ function Home() {
         </div>
 
         {/* Image Auto-Scrolling Carousel */}
-      <div className="relative w-full overflow-hidden">
-  <div className="flex space-x-8 animate-marquee hover:paused">
-    {/* ✅ Double-mapped images for seamless looping */}
-    {[...Array(2)].map((_, repeatIndex) =>
-      ["/transformer.png", "/toroidal.png", "/small-tx2.png", "/small-tx.png"].map((src, index) => (
-        <div key={`${repeatIndex}-${index}`} className="relative w-64 h-auto inline-block">
-          <img src={src} alt={`Transformer ${index}`} className="w-full h-auto object-contain -rotate-90" />
-
-          {/* ✅ Hotspots with hover text */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group">
-            <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
-              <div
-                className="
-                  hidden 
-                  group-hover:block 
-                  absolute
-                  bottom-[110%]
-                  left-1/2
-                  -translate-x-1/2
-                  bg-white
-                  text-black
-                  text-sm
-                  p-2
-                  border
-                  shadow
-                  rounded
-                  z-50
-                  whitespace-normal
-                "
-              >
-                {index === 0 ? "High-Purity Copper Windings" : 
-                 index === 1 ? "Precision Wound Coil" : 
-                 index === 2 ? "Premium Quality Material" : 
-                 "Reliable Components"}
+  <div className="relative w-full overflow-hidden bg-white">
+      <div
+        ref={marqueeRef}
+        className="flex space-x-8 animate-marquee"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {/* ✅ Dynamically loops images without manual duplication */}
+        {images.concat(images).map((item, index) => (
+          <div key={index} className="relative w-64 h-auto inline-block">
+            <img src={item.src} alt={`Image ${index}`} className="w-full h-auto object-contain -rotate-90" />
+            
+            {/* ✅ Hotspot with hover effect */}
+            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 group">
+              <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+                <div
+                  className="
+                    hidden 
+                    group-hover:block 
+                    absolute
+                    bottom-[110%]
+                    left-1/2
+                    -translate-x-1/2
+                    bg-white
+                    text-black
+                    text-sm
+                    p-2
+                    border
+                    shadow
+                    rounded
+                    z-50
+                    whitespace-normal
+                  "
+                >
+                  {item.text}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))
-    )}
-  </div>
-</div>
+        ))}
+      </div>
+    </div>
       </section>
 
       {/* Intro Section */}
