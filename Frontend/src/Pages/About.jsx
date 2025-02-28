@@ -105,17 +105,17 @@ function About() {
 
         
           <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Policy</h2>
-          <p className="text-gray-700 text-center max-w-4xl mx-auto">
+          <p className="text-gray-700 text-center pb-8 max-w-4xl mx-auto">
           “M/S N.N ELECTRONICS Strongly believes in the policy of quality assurance with Customer Centric adoption. It has been our continuous Endeavour, not to compromise with the quality of our products in any circumstances and meeting the customer requirements/parameters.”
 
           Our Quality Control and Assurance (QC &A) division is monitored by well-qualified and experienced professionals, who conduct stringent quality checks at various stages of the production process to ensure the international quality standard of our products.
           </p>
         
           <div className="bg-gray-50">
-             <div className="pt-4">
+             <div className="pt-4 w-1/2">
          <h2 className="text-xl font-semibold text-left ml-5 mt-5 mb-8">Total Quality Management by means of:</h2>
          
-         <ul className="text-gray-700 text-left max-w-4xl mx-auto list-disc pl-5 space-y-1">
+         <ul className="text-gray-700 pb-8 text-left max-w-4xl mx-auto list-disc pl-5 space-y-1">
             <li>Well-laid process and system to ensure compliance & regular audit. Stringent quality control norms and standards are maintained by our trained personnel.</li>
             <li>Continuous emphasis on quality control at each level of the production stage. Defined quality Parameters/AQL charts.</li>
             <li>A vigilant QA team, dedicated to the continuous improvement of our products & services.</li>
