@@ -86,7 +86,7 @@ function About() {
       {/* Vision Section */}
       <section ref={qualityRef} className="mb-16 bg-white py-12 px-8 shadow-lg rounded-lg">
         <h1 className="text-5xl font-semibold text-center pb-4 mb-8">Our Quality</h1> 
-          <p className="text-gray-700 text-center max-w-4xl mx-auto">
+          <p className="text-gray-700 text-center pb-8 max-w-4xl mx-auto">
           Our Quality management system is specially designed by ourselves to minimize the quality failures and with quick action plans which not only relieve our customers of hectic troubles but also from the quality dilemmas. Quality and timely delivery of components to the customers has been our foremost motto, which we confidently stress as being our strength in the industry. Furthermore, the stiff competitiveness have not dithered us to out-source. At NNE, we have 100% in-house production capacity which ensures that the components delivered to the customers goes through stringent quality checks at every step of its journey. Being an ISO-9001:2015, at NNE, we ensure our internal systems are at par with the Industrial Standards.
           </p>
 
@@ -97,7 +97,7 @@ function About() {
           "To provide PPM-quality components to diversified segments of industries,
           leveraging the best available technology."
         </blockquote>
-        <p className="text-gray-700 text-center max-w-4xl mx-auto">
+        <p className="text-gray-700 text-center pb-8 max-w-4xl mx-auto">
           At N.N. Magnetics & Electronics Pvt. Ltd., we prioritize quality and reliability, ensuring customer satisfaction through stringent checks and innovative solutions. With a commitment to <span className="font-bold">ISO-9001:2015, ISO-14001:2018, ISO 14001:2015 and ISO/TS-16949:2009</span> standards, we aim to support uninterrupted power supply with world-class magnetic components.
         </p>
          </div>
