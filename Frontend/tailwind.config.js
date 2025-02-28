@@ -10,31 +10,29 @@ module.exports = {
         scroll: 'scroll 60s linear infinite',
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: 0 },
-          '100%': { transform: 'translateY(0)', opacity: 1 },
-        },
         scroll: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
-        }
+        },
+        // Keep your existing fadeIn and slideUp definitions
       },
     },
   },
   plugins: [
     plugin(function({ addUtilities }) {
-      addUtilities({
-        '.animation-paused': {
-          'animation-play-state': 'paused',
+      addUtilities(
+        {
+          '.animation-paused': {
+            'animation-play-state': 'paused',
+          },
+          '.animation-running': {
+            'animation-play-state': 'running',
+          },
         },
-        '.animation-running': {
-          'animation-play-state': 'running',
-        },
-      })
+        {
+          variants: ['group-hover'] // This enables group-hover variant
+        }
+      )
     })
   ],
 };
