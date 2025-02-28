@@ -5,7 +5,7 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn 0.8s ease-in-out',
         slideUp: 'slideUp 0.8s ease-in-out',
-        marquee: 'marquee 15s linear infinite', // ✅ Loop continuously
+         marquee: 'marquee 15s linear infinite', // ✅ Loop continuously
       },
       keyframes: {
         fadeIn: {
@@ -16,9 +16,9 @@ module.exports = {
           '0%': { transform: 'translateY(20px)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
-        marquee: { 
+      marquee: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' }, // ✅ Scrolls entire width and resets
+          '100%': { transform: 'translateX(-100%)' }, // ✅ Moves left infinitely
         },
       },
     },
