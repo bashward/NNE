@@ -45,7 +45,7 @@ function Products() {
      {
       name: '  Drum Cores',
       description: 'All geometries available.',
-      image: '/toroidal.png',
+      image: '/drmcore.png',
       link: '/products/toroidal-coils',
     },
     {
