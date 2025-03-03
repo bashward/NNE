@@ -48,7 +48,7 @@ function Home() {
                   <img
                     src="/small-tx3.png"
                     alt="Toroidal Coil"
-                    className="w-full h-auto object-contain -rotate-90"
+                    className="w-full h-auto object-contain"
                   />
                   <div className="absolute group" style={{ top: '50%', left: '40%' }}>
                     <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
