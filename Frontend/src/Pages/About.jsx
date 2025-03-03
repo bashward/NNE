@@ -106,7 +106,7 @@ function About() {
         
           <h2 className="text-3xl font-semibold text-center mt-5 mb-8">Quality Policy</h2>
           <p className="text-gray-700 text-center pb-8 max-w-4xl mx-auto">
-          “MN.N Magnetics and Electronics strongly believes in the policy of quality assurance with Customer Centric adoption. It has been our continuous Endeavour, not to compromise with the quality of our products in any circumstances and meeting the customer requirements/parameters.”
+          “N.N Magnetics and Electronics strongly believes in the policy of quality assurance with Customer Centric adoption. It has been our continuous Endeavour, not to compromise with the quality of our products in any circumstances and meeting the customer requirements/parameters.”
 
           Our Quality Control and Assurance (QC &A) division is monitored by well-qualified and experienced professionals, who conduct stringent quality checks at various stages of the production process to ensure the international quality standard of our products.
           </p>
