@@ -39,7 +39,7 @@ function Products() {
       {
       name: 'Ferrite Cores',
       description: 'All geometries available',
-      image: '/transformer.png',
+      image: '/core.png',
       link: '/products/ferrite-transformers',
     },
      {
@@ -57,7 +57,7 @@ function Products() {
     {
       name: 'Bobbins',
       description: 'All geometries available',
-      image: '',
+      image: '/bobbins.png',
       link: '',
     },
     {
