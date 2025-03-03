@@ -12,7 +12,7 @@ import FerriteTransformers from './Pages/FerriteTransformers';
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
+      <Navbar className="fixed" />
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
