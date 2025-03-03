@@ -44,6 +44,21 @@ function Home() {
                   </div>
                 </div>
 
+                     <div className="relative w-64 h-auto flex-shrink-0">
+                  <img
+                    src="/small-tx3.png"
+                    alt="Toroidal Coil"
+                    className="w-full h-auto object-contain -rotate-90"
+                  />
+                  <div className="absolute group" style={{ top: '50%', left: '40%' }}>
+                    <div className="w-4 h-4 bg-red-600 ring-2 ring-white rounded-full hover:cursor-pointer relative z-10">
+                      <div className="hidden group-hover:block absolute bottom-[110%] left-1/2 -translate-x-1/2 bg-white text-black text-sm p-2 border shadow rounded z-50 whitespace-normal">
+                        Innovative Custom Solutions
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* Toroidal Coil Image */}
                 <div className="relative w-64 h-auto flex-shrink-0">
                   <img
