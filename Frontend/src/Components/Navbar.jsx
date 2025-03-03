@@ -15,7 +15,7 @@ function Navbar() {
           <img 
             src={logo} 
             alt="Logo" 
-            className="w-3xs md:w-8 h-auto" // Adjusted for mobile & desktop
+            className="w-12 md:w-24 h-auto" // Adjusted for mobile & desktop
           />
         </Link>
 
