@@ -152,7 +152,7 @@ function Home() {
   <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
     {/* Ferrite Transformers */}
     <div
-      className="bg-white p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
+      className="bg-white rounded-md p-6 shadow hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
       onClick={() => window.location.href = '/products/ferrite-transformers'}
     >
       <h3 className="text-xl font-bold mb-2">Ferrite Transformers</h3>
