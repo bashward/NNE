@@ -33,7 +33,7 @@ function Products() {
     {
       name: 'Low Frequency Transformers',
       description: 'High efficiency Transformers for industrial and commercial applications.',
-      image: '',
+      image: '/lowft.png',
       link: '',
     },
       {
@@ -51,7 +51,7 @@ function Products() {
     {
       name: 'Powder Cores',
       description: 'Efficient solution for your power circuits.',
-      image: '',
+      image: '/powdercore.png',
       link: '',
     },
     {
