@@ -27,13 +27,13 @@ function Products() {
     {
       name: 'Common Mode Chokes/ Differential Mode Chokes',
       description: 'High Efficiency Transformers for industrial and commercial applications.',
-      image: '/inductors.png',
+      image: '/lowft.png',
       link: '/products/inductors',
     },
     {
       name: 'Low Frequency Transformers',
       description: 'High efficiency Transformers for industrial and commercial applications.',
-      image: '/lowft.png',
+      image: '/diff.png',
       link: '',
     },
       {
