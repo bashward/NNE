@@ -15,13 +15,13 @@ function Products() {
     {
       name: 'Drum Core, Rod Core & Air Coil Inductors',
       description: 'All geometries available.',
-      image: '/toroidal.png',
+      image: '/drm-coils.png',
       link: '/products/toroidal-coils',
     },
     {
       name: 'Toroidal Inductors',
       description: 'Efficient Inductors for industry standards.',
-      image: '',
+      image: '/tor1.png',
       link: '',
     },
     {
