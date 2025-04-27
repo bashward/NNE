@@ -45,7 +45,7 @@ const Loading: React.FC = () => {
           {showVideo && (
             <video
               key={key}
-              src={isSafari ? '/nneloading.mov' : '/nneloading.webm'}
+              src={isSafari ? '/nneloading.gif' : '/nneloading.webm'}
               autoPlay
               muted
               loop
