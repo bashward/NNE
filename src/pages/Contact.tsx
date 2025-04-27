@@ -231,9 +231,6 @@ const ContactPage: React.FC = () => {
                         </div>
                         <div>
                           <h3 className="font-semibold text-white">Email</h3>
-                          <a href="mailto:nitinthakur@nnelectronics.org" className="text-blue-200 hover:text-white transition-colors block mt-1">
-                            nitinthakur@nnelectronics.org
-                          </a>
                           <a href="mailto:sales@nnelectronics.org" className="text-blue-200 hover:text-white transition-colors block mt-1">
                             sales@nnelectronics.org
                           </a>
