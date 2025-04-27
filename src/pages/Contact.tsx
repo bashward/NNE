@@ -203,9 +203,9 @@ const ContactPage: React.FC = () => {
                         <div>
                           <h3 className="font-semibold text-white">Headquarters</h3>
                           <p className="text-blue-200 mt-1">
-                            Plot no. 307,<br />
-                            Udyog Vihar Industrial Area, Phase-6, Sector 37,<br />
-                            Gurugram, Haryana 122004
+                            Plot no. D23,<br />
+                            Industrial Area, Pandoga,<br />
+                            Himachal Pradesh 177207
                           </p>
                         </div>
                       </div>
@@ -367,7 +367,7 @@ const ContactPage: React.FC = () => {
             <AnimatedSection animation="fade-up" delay={200} className="mt-12">
               <div className="rounded-2xl overflow-hidden h-[400px] shadow-xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.5019070120475!2d76.99587607720822!3d28.43428277577357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd309eebed77%3A0x218411d428d47ce4!2sN.%20N.%20Electronics!5e0!3m2!1sen!2sin!4v1745661913774!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.0295549923185!2d76.1634018!3d31.523348199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391adf0028b18463%3A0x41be499596289f4a!2sN%20N%20Magnetics%20and%20Electronics%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1745747580747!5m2!1sen!2sin"
                   className="w-full h-full"
                   style={{ border: 0 }}
                   allowFullScreen
@@ -385,4 +385,3 @@ const ContactPage: React.FC = () => {
 };
 
 export default ContactPage;
-
