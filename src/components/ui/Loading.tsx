@@ -4,6 +4,8 @@ const Loading: React.FC = () => {
   const [progress, setProgress] = useState(0);
   const [key, setKey] = useState(Date.now());
   const [showVideo, setShowVideo] = useState(false);
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 
   useEffect(() => {
     const startTime = performance.now();
@@ -43,7 +45,7 @@ const Loading: React.FC = () => {
           {showVideo && (
             <video
               key={key}
-              src="/nneloading.webm"
+              src={isSafari ? '/nneloading.mov' : '/nneloading.webm'}
               autoPlay
               muted
               loop
