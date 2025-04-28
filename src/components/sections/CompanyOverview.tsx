@@ -11,7 +11,7 @@ const CompanyOverview: React.FC = () => {
         <AnimatedSection>
           <SectionHeading
             title="Excellence in Magnetic Component Manufacturing"
-            subtitle="With over 35 years of experience, we deliver precision-engineered magnetic components that exceed industry standards."
+            subtitle="With over 25 years of experience, we deliver precision-engineered magnetic components that exceed industry standards."
             centered
           />
         </AnimatedSection>
@@ -117,7 +117,7 @@ const CompanyOverview: React.FC = () => {
                 
                 <div className="bg-gray-50 p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
                   <div className="text-4xl font-bold text-primary-700 mb-1">200+</div>
-                  <p className="text-gray-600 font-medium">Global Clients</p>
+                  <p className="text-gray-600 font-medium">Clients</p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
@@ -126,8 +126,8 @@ const CompanyOverview: React.FC = () => {
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
-                  <div className="text-4xl font-bold text-primary-700 mb-1">12</div>
-                  <p className="text-gray-600 font-medium">Patents</p>
+                  <div className="text-4xl font-bold text-primary-700 mb-1">4M+</div>
+                  <p className="text-gray-600 font-medium">Components Shipped</p>
                 </div>
               </div>
             </div>
