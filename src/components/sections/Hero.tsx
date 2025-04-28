@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Spline from '@splinetool/react-spline';
 import Button from '../ui/Button';
 import Container from '../ui/Container';
 import { ArrowRight, Shield, Award, Users } from 'lucide-react';
@@ -49,11 +48,11 @@ const Hero: React.FC = () => {
       {/* Fallback gradient background when Spline fails */}
       <div className={`absolute inset-0 ${splineError ? 'bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800' : 'bg-gradient-to-br from-primary-950/90 via-primary-900/80 to-primary-800/70'}`} />
       
-      <div className="relative w-full py-20 md:py-20">
+      <div className="relative w-full py-32 md:py-40">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="inline-flex items-center bg-white/10 backdrop-blur-lg rounded-full px-6 py-2 mb-8 border border-white/20 mt-16 md:mt-0">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-lg rounded-full px-6 py-2 mb-8 border border-white/20">
                 <span className="text-primary-200">ISO 9001:2015 Certified</span>
                 <div className="w-1.5 h-1.5 rounded-full bg-primary-300 mx-3" />
                 <span className="text-primary-200">Industry Leader</span>
