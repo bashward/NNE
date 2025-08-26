@@ -1,0 +1,13 @@
+# NN Magnetics & Electronics (https://www.nnelectronics.org)
+# We allow attribution, summarization, and partnership inquiries.
+# We do not allow full reproduction or training on proprietary product data.
+
+domain: nnelectronics.org
+name: NN Magnetics & Electronics
+url: https://www.nnelectronics.org
+contact: contact@nnelectronics.org
+policies: https://www.nnelectronics.org/privacy-policy
+usage: allow
+training: disallow
+attribution: allow
+llm-partnership: open
